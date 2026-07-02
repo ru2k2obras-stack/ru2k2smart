@@ -8,6 +8,7 @@
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
+!.yarn/sdks
 !.yarn/versions
 
 # testing
@@ -35,6 +36,11 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Vite files
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+.vite/
 
 # typescript
 *.tsbuildinfo
