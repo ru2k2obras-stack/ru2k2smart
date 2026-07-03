@@ -13,17 +13,17 @@ export default function Services() {
       icono: Building2,
       titulo: "ARQUITECTURA",
       descripcion:
-        "Proyectos de obra nueva, remodelaciones y restauración.",
+        "Proyectos/desarrollos para obra nueva, remodelaciones, restauración y ambientación de espacios antiguos y modernos.",
     },
     {
       icono: Cog,
       titulo: "INGENIERÍA",
       descripcion:
-        "Instalaciones, cálculo estructural y dirección técnica.",
+        "Consultoría y Dirección Tecniá para instalaciones, cálculo estructural y sus habilitaciones profesionales o comerciales.",
     },
     {
       icono: Hammer,
-      titulo: "NUEVOS PROYECTOS",
+      titulo: "NUEVAS PERFORMANCES HABITACIONALES Y COMERCILAES.",
       descripcion:
         "Obras llave en mano y seguimiento integral de cada etapa.",
     },
@@ -31,19 +31,19 @@ export default function Services() {
       icono: Lightbulb,
       titulo: "INNOVACIÓN",
       descripcion:
-        "Automatización inteligente para viviendas y edificios.",
+        "Automatización inteligente para viviendas, edificios e industrias.",
     },
     {
       icono: FileCheck,
       titulo: "CONSULTORÍA",
       descripcion:
-        "Normativas, habilitaciones y documentación profesional.",
+        "Normativas, habilitaciones y documentación profesional con croquis preliminares, anteproyectos y sus seguimientos.",
     },
     {
       icono: ShieldCheck,
-      titulo: "CONTROL EN LÍNEA",
+      titulo: "CONTROL EN LÍNEA Y SEGURIDAD ELECTRÓNICA",
       descripcion:
-        "Domótica, seguridad electrónica y edificios inteligentes.",
+        "Domótica y control parcial y total de los sistemas que brindan confort y resguardo habitacional para comunidades con consorcios o dominios propios.",
     },
   ];
 
