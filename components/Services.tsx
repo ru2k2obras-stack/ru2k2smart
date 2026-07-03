@@ -1,58 +1,181 @@
+import {
+  Building2,
+  Cog,
+  Hammer,
+  Lightbulb,
+  FileCheck,
+  ShieldCheck,
+} from "lucide-react";
+
 export default function Services() {
   const servicios = [
     {
-      titulo:"ARQUITECTURA",
-      descripcion: "Proyectos de obra nueva, remodelaciones y restauración.",
+      icono: Building2,
+      titulo: "ARQUITECTURA",
+      descripcion:
+        "Proyectos de obra nueva, remodelaciones y restauración.",
     },
     {
+      icono: Cog,
       titulo: "INGENIERÍA",
-      descripcion: "Instalaciones, cálculo y dirección técnica.",
+      descripcion:
+        "Instalaciones, cálculo estructural y dirección técnica.",
     },
     {
+      icono: Hammer,
       titulo: "NUEVOS PROYECTOS",
-      descripcion: "Obras llave en mano y seguimiento integral.",
+      descripcion:
+        "Obras llave en mano y seguimiento integral de cada etapa.",
     },
     {
-      titulo: "INNOVACÍON",
-      descripcion: "Automatización de viviendas y edificios.",
+      icono: Lightbulb,
+      titulo: "INNOVACIÓN",
+      descripcion:
+        "Automatización inteligente para viviendas y edificios.",
     },
     {
+      icono: FileCheck,
       titulo: "CONSULTORÍA",
-      descripcion: "Normativas, habilitaciones y documentación profesional.",
+      descripcion:
+        "Normativas, habilitaciones y documentación profesional.",
     },
     {
-      titulo: "CONTROL EN LÍNEA Y SEGURIDAD ELECTRÓNICA (DOMÓTICA)",
-      descripcion: "Consorcios, salas de máquinas y edificios inteligentes.",
+      icono: ShieldCheck,
+      titulo: "CONTROL EN LÍNEA",
+      descripcion:
+        "Domótica, seguridad electrónica y edificios inteligentes.",
     },
   ];
 
   return (
     <section
       id="servicios"
-      className="bg-gray-100 py-24 px-8"
+      className="bg-gray-100 py-20 px-6"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-bold text-center mb-4">
+
+        <h2 className="text-4xl md:text-5xl font-black text-center text-gray-900 mb-5">
           Te ayudamos con:
         </h2>
 
-        <p className="text-center text-blue-400 mb-16">
-          CONSULTORÍA Y SOLUCIONES INTEGRALES: para la construcción, renovación y automatización de espacios modernos.
+        <p className="text-center text-blue-700 text-lg max-w-4xl mx-auto mb-14 leading-8">
+          CONSULTORÍA Y SOLUCIONES INTEGRALES para la construcción,
+          renovación y automatización de espacios modernos.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {servicios.map((servicio) => (
-            <div
-              key={servicio.titulo}
-              className="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-blue-100"
-            >
-              <h3 className="group-hover:scale-110 transition-transform duration-700">
-                {servicio.titulo}
-              </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
 
-              <p>{servicio.descripcion}</p>
-            </div>
-          ))}
+          {servicios.map((servicio) => {
+            const Icono = servicio.icono;
+
+            return (
+              <div
+                key={servicio.titulo}
+                className="
+                  relative
+                  overflow-hidden
+                  rounded-2xl
+                  bg-white
+                  p-6
+                  shadow-md
+                  border
+                  border-slate-200
+                  transition-all
+                  duration-500
+                  hover:-translate-y-2
+                  hover:shadow-2xl
+                  hover:border-blue-500
+                  group
+                "
+              >
+                {/* Luz superior */}
+                <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-cyan-400 via-blue-600 to-cyan-400"></div>
+
+                {/* Reflejo */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 duration-700 transition-opacity">
+                  <div className="absolute -left-28 top-0 h-full w-24 rotate-12 bg-white/40 blur-2xl"></div>
+                </div>
+
+                {/* Ícono */}
+                <div className="flex justify-center mb-5">
+                  <div className="
+                    w-16
+                    h-16
+                    rounded-2xl
+                    bg-gradient-to-br
+                    from-blue-600
+                    to-cyan-500
+                    flex
+                    items-center
+                    justify-center
+                    shadow-lg
+                    group-hover:scale-110
+                    group-hover:rotate-6
+                    transition-all
+                    duration-500
+                  ">
+                    <Icono
+                      size={30}
+                      strokeWidth={2.2}
+                      className="text-white"
+                    />
+                  </div>
+                </div>
+
+                {/* Título */}
+                <h3 className="
+                  text-lg
+                  font-black
+                  text-center
+                  text-gray-900
+                  uppercase
+                  tracking-wide
+                  mb-3
+                  group-hover:text-blue-700
+                  transition-colors
+                ">
+                  {servicio.titulo}
+                </h3>
+
+                <div className="
+                  w-12
+                  h-1
+                  rounded-full
+                  bg-blue-600
+                  mx-auto
+                  mb-4
+                  group-hover:w-20
+                  transition-all
+                  duration-500
+                " />
+
+                {/* Texto */}
+                <p className="
+                  text-center
+                  text-gray-600
+                  text-[15px]
+                  leading-7
+                ">
+                  {servicio.descripcion}
+                </p>
+
+                {/* Glow */}
+                <div className="
+                  absolute
+                  -bottom-16
+                  left-1/2
+                  -translate-x-1/2
+                  w-44
+                  h-44
+                  bg-blue-400/10
+                  blur-3xl
+                  group-hover:bg-cyan-400/20
+                  transition-all
+                  duration-700
+                " />
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
