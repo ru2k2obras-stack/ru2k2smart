@@ -24,7 +24,7 @@ export default function About() {
           </div>
           <div className="bg-white/20 rounded-xl p-6">
             <h3 className="text-xl font-bold mb-2">🔑 Llave en Mano</h3>
-            <p>Remodelamos y te entregamos la propiedad lista para mudarte o tu comercio con inicio de actividades economicas declaradas.</p>
+            <p>Remodelamos y te entregamos la propiedad lista para mudarte o tu comercio con inicio de actividades económicas declaradas.</p>
           </div>
         </div>
       </div>
