@@ -19,7 +19,7 @@ export default function Architecture() {
             TRABAJAMOS PROYECTOS INTEGRALES.
           </h2>
 
-          <p className="text-gray-600 text-lg leading-8 mb-10">
+          <p className="text-gray-900 text-lg leading-8 mb-10">
             Creamos proyectos de espacios modernos, funcionales y preparados para la eficiencia energética y la automatización desde
             el primer día.
           </p>

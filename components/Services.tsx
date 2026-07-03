@@ -23,7 +23,7 @@ export default function Services() {
     },
     {
       icono: Hammer,
-      titulo: "NUEVAS PERFORMANCES HABITACIONALES Y COMERCILAES.",
+      titulo: "NUEVAS PERFORMANCES HABITACIONALES Y COMERCIALES.",
       descripcion:
         "Obras llave en mano y seguimiento integral de cada etapa.",
     },
@@ -31,7 +31,7 @@ export default function Services() {
       icono: Lightbulb,
       titulo: "INNOVACIÓN",
       descripcion:
-        "Automatización inteligente para viviendas, edificios e industrias.",
+        "Automatización inteligente para viviendas, negocios, edificios e industrias.",
     },
     {
       icono: FileCheck,
@@ -43,7 +43,7 @@ export default function Services() {
       icono: ShieldCheck,
       titulo: "CONTROL EN LÍNEA Y SEGURIDAD ELECTRÓNICA",
       descripcion:
-        "Domótica y control parcial y total de los sistemas que brindan confort y resguardo habitacional para comunidades con consorcios o dominios propios.",
+        "Domótica y control parcial o total de los sistemas que brindan confort y resguardo habitacional para comunidades con consorcios o dominios propios.",
     },
   ];
 
