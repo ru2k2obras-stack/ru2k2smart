@@ -50,7 +50,7 @@ export default function Engineering() {
           <p className="text-black text-lg leading-8 mb-10">
             Diseñamos soluciones de ingeniería integrales para edificios,
             industrias, desarrollos inmobiliarios y proyectos tecnológicos,
-            incorporando eficiencia energética, automatización y control.
+            incorporando eficiencia energética, automatización, control y seguridad en línea.
           </p>
           <div className="flex flex-wrap gap-4">
             <button className="bg-cyan-500 hover:bg-cyan-600 transition px-8 py-4 rounded-full font-bold shadow-xl hover:scale-105">
