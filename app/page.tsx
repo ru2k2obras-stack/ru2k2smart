@@ -24,18 +24,14 @@ export default function Home() {
       <About />
 
       <Architecture />
-      
+
       <Engineering />
 
-      {/* <Contact /> */}
-
-      {/* <Footer /> */}
-
       <RuditoAssistant
-  open={ruditoOpen}
-  onOpen={() => setRuditoOpen(true)}
-  onClose={() => setRuditoOpen(false)}
-/>
+        open={ruditoOpen}
+        onOpen={() => setRuditoOpen(true)}
+        onClose={() => setRuditoOpen(false)}
+      />
     </main>
   );
 }

@@ -13,7 +13,7 @@ export default function Services() {
       icono: Building2,
       titulo: "ARQUITECTURA",
       descripcion:
-        "Proyectos/desarrollos para obra nueva, Ley de edificación, demoliciones, Ley de Fachada 257/6116, remodelaciones, restauración y ambientación de espacios antiguos y modernos.",
+        "Proyectos/desarrollos para obra nueva, Ley de Edificación, demoliciones, Ley de Fachada 257/6116, remodelaciones, restauración y ambientación de espacios antiguos y modernos.",
     },
     {
       icono: Cog,
