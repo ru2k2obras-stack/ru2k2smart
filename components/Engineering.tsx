@@ -10,7 +10,7 @@ export default function Engineering() {
         {/* Imagen */}
         <div className="relative group rounded-3xl overflow-hidden shadow-2xl order-2 lg:order-1">
           <img
-            src="/images/ingenieria-premium.jpg"
+            src="/images/madero.png"
             alt="Ingeniería"
             className="
               w-full

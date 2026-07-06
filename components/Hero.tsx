@@ -68,7 +68,6 @@ export default function Hero({ onQuoteClick }: HeroProps) {
           >
             Tu vida más confortable
           </h1>
-
           <p
             className="
               mt-8
