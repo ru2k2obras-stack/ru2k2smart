@@ -82,8 +82,6 @@ export default function Hero({ onQuoteClick }: HeroProps) {
       "
     >
       Viví el futuro antes de mudarte.
-      Arquitectura, ingeniería y automatización
-      integradas en un mismo proyecto.
     </p>
 
     <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
