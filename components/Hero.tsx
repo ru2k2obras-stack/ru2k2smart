@@ -12,26 +12,36 @@ export default function Hero({ onQuoteClick }: HeroProps) {
       <img
         src="/images/buenosaires.jpg"
         alt="RU2K2 SMART"
-        className="absolute inset-0 w-full h-full object-cover object-center brightness-75 contrast-110 saturate-105"
+        className="
+          absolute
+          inset-0
+          w-full
+          h-full
+          object-cover
+          object-center
+          brightness-90
+          contrast-105
+          saturate-105
+        "
       />
 
-      {/* Overlay oscuro */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-black/70" />
+      {/* Overlay oscuro suave */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/20 to-black/45" />
 
       {/* Contenido */}
-      <div className="relative z-10 flex h-full items-center justify-center px-6">
+      <div className="relative z-10 flex h-full items-center justify-center px-6 pt-16 pb-36">
         <div className="max-w-4xl text-center">
 
           <h1
             className="
-              text-4xl
+              text-5xl
               sm:text-6xl
               lg:text-7xl
               font-light
-              leading-tight
               tracking-tight
+              leading-tight
               text-white
-              drop-shadow-[0_8px_30px_rgba(0,0,0,1)]
+              drop-shadow-[0_4px_18px_rgba(0,0,0,.8)]
             "
           >
             Tu vida más
@@ -41,14 +51,14 @@ export default function Hero({ onQuoteClick }: HeroProps) {
 
           <p
             className="
-              mt-8
-              max-w-2xl
+              mt-6
               mx-auto
+              max-w-2xl
               text-lg
               sm:text-2xl
               text-white
               leading-relaxed
-              drop-shadow-[0_5px_20px_rgba(0,0,0,1)]
+              drop-shadow-[0_3px_10px_rgba(0,0,0,.8)]
             "
           >
             Viví el futuro antes de mudarte.
@@ -65,10 +75,11 @@ export default function Hero({ onQuoteClick }: HeroProps) {
                 py-4
                 text-white
                 font-semibold
-                shadow-[0_15px_40px_rgba(0,0,0,.45)]
-                hover:bg-cyan-400
+                shadow-lg
                 transition-all
                 duration-300
+                hover:bg-cyan-400
+                hover:scale-105
               "
             >
               Solicitar Cotización
@@ -80,7 +91,7 @@ export default function Hero({ onQuoteClick }: HeroProps) {
                 rounded-full
                 border
                 border-white/40
-                bg-white/5
+                bg-white/10
                 backdrop-blur-md
                 px-8
                 py-4
@@ -90,7 +101,6 @@ export default function Hero({ onQuoteClick }: HeroProps) {
                 duration-300
                 hover:bg-white
                 hover:text-slate-900
-                hover:border-white
               "
             >
               Ver Servicios
@@ -111,6 +121,7 @@ export default function Hero({ onQuoteClick }: HeroProps) {
           h-32
           bg-gradient-to-b
           from-transparent
+          via-white/10
           to-white
         "
       />
