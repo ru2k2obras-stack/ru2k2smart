@@ -12,119 +12,96 @@ export default function Hero({ onQuoteClick }: HeroProps) {
       <img
         src="/images/buenosaires.jpg"
         alt="RU2K2 SMART"
-        className="absolute inset-0 w-full h-full object-cover object-center brightness-110 contrast-110 saturate-110"
+        className="absolute inset-0 w-full h-full object-cover object-center brightness-75 contrast-110 saturate-105"
       />
 
-      {/* Luz ambiente */}
-      <div className="absolute inset-0 bg-white/10" />
-
-      {/* Degradado muy sutil */}
-      <div className="absolute inset-0 bg-gradient-to-b from-sky-100/10 via-transparent to-slate-50/15" />
-
-      {/* Halo detrás del texto */}
-      <div
-        className="
-          absolute
-          left-1/2
-          top-1/2
-          -translate-x-1/2
-          -translate-y-1/2
-          w-[900px]
-          h-[500px]
-          rounded-full
-          bg-white/15
-          blur-3xl
-        "
-      />
+      {/* Overlay oscuro */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-black/70" />
 
       {/* Contenido */}
       <div className="relative z-10 flex h-full items-center justify-center px-6">
-  <div className="max-w-4xl text-center">
+        <div className="max-w-4xl text-center">
 
-    <h2
-      className="
-      text-sm
-      sm:text-lg
-      uppercase
-      tracking-[0.35em]
-      text-cyan-300
-      font-medium
-      mb-5
-      "
-    >
-    </h2>
+          <h1
+            className="
+              text-4xl
+              sm:text-6xl
+              lg:text-7xl
+              font-light
+              leading-tight
+              tracking-tight
+              text-white
+              drop-shadow-[0_8px_30px_rgba(0,0,0,1)]
+            "
+          >
+            Tu vida más
+            <br />
+            confortable
+          </h1>
 
-    <h1
-      className="
-      text-4xl
-      sm:text-6xl
-      lg:text-7xl
-      font-light
-      tracking-tight
-      text-white
-      leading-tight
-      drop-shadow-[0_6px_20px_rgba(0,0,0,.95)]
-      "
-    >
-      Tu vida más confortable
-    </h1>
+          <p
+            className="
+              mt-8
+              max-w-2xl
+              mx-auto
+              text-lg
+              sm:text-2xl
+              text-white
+              leading-relaxed
+              drop-shadow-[0_5px_20px_rgba(0,0,0,1)]
+            "
+          >
+            Viví el futuro antes de mudarte.
+          </p>
 
-    <p
-      className="
-      mt-6
-      max-w-2xl
-      mx-auto
-      text-lg
-      sm:text-2xl
-      text-white/95
-      leading-relaxed
-      drop-shadow-[0_5px_15px_rgba(0,0,0,.9)]
-      "
-    >
-      Viví el futuro antes de mudarte.
-    </p>
+          <div className="mt-12 flex flex-col sm:flex-row justify-center gap-5">
 
-    <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+            <button
+              onClick={onQuoteClick}
+              className="
+                rounded-full
+                bg-cyan-500
+                px-8
+                py-4
+                text-white
+                font-semibold
+                shadow-[0_15px_40px_rgba(0,0,0,.45)]
+                hover:bg-cyan-400
+                transition-all
+                duration-300
+              "
+            >
+              Solicitar Cotización
+            </button>
 
-      <button
-        onClick={onQuoteClick}
-        className="
-        rounded-full
-        bg-cyan-500
-        px-8
-        py-4
-        text-white
-        font-semibold
-        hover:bg-cyan-400
-        transition
-        "
-      >
-        Solicitar Cotización
-      </button>
-
-      <a
-        href="#servicios"
-        className="
-        rounded-full
-        border
-        border-white/70
-        px-8
-        py-4
-        text-white
-        hover:bg-white
-        hover:text-slate-900
-        transition
-        "
-      >
-        Ver Servicios
-      </a>
+            <a
+              href="#servicios"
+              className="
+                rounded-full
+                border
+                border-white/40
+                bg-white/5
+                backdrop-blur-md
+                px-8
+                py-4
+                text-white
+                font-medium
+                transition-all
+                duration-300
+                hover:bg-white
+                hover:text-slate-900
+                hover:border-white
+              "
+            >
+              Ver Servicios
+            </a>
 
           </div>
 
         </div>
       </div>
 
-      {/* Transición muy sutil hacia la siguiente sección */}
+      {/* Degradado inferior */}
       <div
         className="
           absolute
@@ -134,7 +111,6 @@ export default function Hero({ onQuoteClick }: HeroProps) {
           h-32
           bg-gradient-to-b
           from-transparent
-          via-white/10
           to-white
         "
       />
