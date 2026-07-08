@@ -39,117 +39,87 @@ export default function Hero({ onQuoteClick }: HeroProps) {
 
       {/* Contenido */}
       <div className="relative z-10 flex h-full items-center justify-center px-6">
-        <div className="text-center max-w-6xl animate-[fadeIn_1.2s_ease]">
+  <div className="max-w-4xl text-center">
 
-          <h1
-            className="
-              text-1xl
-              md:text-8xl
-              lg:text-6xl
-              font-black
-              leading-none
-              tracking-tight
+    <h2
+      className="
+      text-sm
+      sm:text-lg
+      uppercase
+      tracking-[0.35em]
+      text-cyan-300
+      font-medium
+      mb-5
+      "
+    >
+    </h2>
 
-              bg-gradient-to-r
-              from-white
-              via-slate-100
-              to-cyan-200
+    <h1
+      className="
+      text-4xl
+      sm:text-6xl
+      lg:text-7xl
+      font-light
+      tracking-tight
+      text-white
+      leading-tight
+      drop-shadow-[0_6px_20px_rgba(0,0,0,.95)]
+      "
+    >
+      Tu vida más confortable
+    </h1>
 
-              bg-clip-text
-              text-transparent
+    <p
+      className="
+      mt-6
+      max-w-2xl
+      mx-auto
+      text-lg
+      sm:text-2xl
+      text-white/95
+      leading-relaxed
+      drop-shadow-[0_5px_15px_rgba(0,0,0,.9)]
+      "
+    >
+      Viví el futuro antes de mudarte.
+      Arquitectura, ingeniería y automatización
+      integradas en un mismo proyecto.
+    </p>
 
-              drop-shadow-[0_8px_30px_rgba(0,0,0,.9)]
+    <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
 
-              [text-shadow:
-                0_2px_0_rgba(255,255,255,.30),
-                0_8px_20px_rgba(0,0,0,.55),
-                0_20px_45px_rgba(0,0,0,.45)]
-            "
-          >
-            Tu vida más confortable
-          </h1>
-          <p
-            className="
-              mt-8
-              text-2xl
-              md:text-4xl
-              lg:text-3xl
-              font-light
-              tracking-[0.08em]
-              text-white
-              drop-shadow-[0_6px_20px_rgba(0,0,0,.95)]
-            "
-          >
-            Viví el futuro antes de mudarte
-          </p>
+      <button
+        onClick={onQuoteClick}
+        className="
+        rounded-full
+        bg-cyan-500
+        px-8
+        py-4
+        text-white
+        font-semibold
+        hover:bg-cyan-400
+        transition
+        "
+      >
+        Solicitar Cotización
+      </button>
 
-          {/* Línea luminosa */}
-          <div
-            className="
-              mx-auto
-              mt-10
-              h-[3px]
-              w-44
-              rounded-full
-              bg-gradient-to-r
-              from-transparent
-              via-cyan-300
-              to-transparent
-              shadow-[0_0_30px_rgba(34,211,238,.8)]
-            "
-          />
-
-          <div className="mt-14 flex flex-wrap justify-center gap-6">
-
-            <button
-              onClick={onQuoteClick}
-              className="
-                rounded-full
-                bg-cyan-500
-                px-10
-                py-5
-                text-lg
-                font-bold
-                text-white
-
-                shadow-[0_0_35px_rgba(6,182,212,.45)]
-
-                transition-all
-                duration-300
-
-                hover:scale-105
-                hover:bg-cyan-400
-                hover:shadow-[0_0_55px_rgba(6,182,212,.75)]
-              "
-            >
-              Solicitar Cotización
-            </button>
-
-            <a
-              href="#servicios"
-              className="
-                rounded-full
-                border
-                border-white/40
-                bg-white/10
-                backdrop-blur-md
-
-                px-10
-                py-5
-
-                text-lg
-                font-semibold
-                text-white
-
-                transition-all
-                duration-300
-
-                hover:bg-white/20
-                hover:border-cyan-300
-              "
-            >
-              Ver Servicios
-            </a>
+      <a
+        href="#servicios"
+        className="
+        rounded-full
+        border
+        border-white/70
+        px-8
+        py-4
+        text-white
+        hover:bg-white
+        hover:text-slate-900
+        transition
+        "
+      >
+        Ver Servicios
+      </a>
 
           </div>
 

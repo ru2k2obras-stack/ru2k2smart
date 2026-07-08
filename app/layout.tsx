@@ -44,18 +44,27 @@ export const metadata: Metadata = {
   publisher: "RU2K2 Smart",
 
   openGraph: {
-    title: "RU2K2 Smart",
-    description:
-      "Arquitectura • Ingeniería • Domótica • Automatización • Tecnología Inteligente",
+  title: "RU2K2 Smart",
+  description:
+    "Construcción, Ingeniería, Innovación.",
 
-    url: "https://www.ru2k2smart.com.ar",
+  url: "https://www.ru2k2smart.com.ar",
 
-    siteName: "RU2K2 Smart",
+  siteName: "RU2K2 Smart",
 
-    locale: "es_AR",
+  locale: "es_AR",
 
-    type: "website",
-  },
+  type: "website",
+
+  images: [
+    {
+      url: "/og-image.png",
+      width: 1200,
+      height: 630,
+      alt: "RU2K2 Smart",
+    },
+  ],
+},
 
   robots: {
     index: true,
