@@ -19,7 +19,7 @@ export default function Services() {
       icono: Cog,
       titulo: "INGENIERÍA",
       descripcion:
-        "Consultoría y Dirección Tecniá para instalaciones, cálculo estructural y sus habilitaciones profesionales o comerciales.",
+        "Consultoría y Dirección Técnica para instalaciones, cálculo estructural y sus habilitaciones profesionales o comerciales.",
     },
     {
       icono: Hammer,
@@ -58,10 +58,17 @@ export default function Services() {
           Te ayudamos con:
         </h2>
 
-        <p className="text-center text-blue-700 text-lg max-w-4xl mx-auto mb-14 leading-8">
-          CONSULTORÍA Y SOLUCIONES INTEGRALES para la construcción,
-          renovación y automatización de espacios modernos.
-        </p>
+        <p className="text-center text-blue-700 text-lg max-w-4xl mx-auto mb-12 leading-7">
+  <span className="font-semibold tracking-wide">
+    CONSTRUCCIÓN · INGENIERÍA · INNOVACIÓN
+  </span>
+  <br />
+  <span className="text-gray-700">
+    Consultoría y soluciones integrales en arquitectura para la construcción,
+    renovación, automatización de espacios modernos y desarrollo de proyectos
+    bioclimáticos.
+  </span>
+</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
 
@@ -69,25 +76,35 @@ export default function Services() {
             const Icono = servicio.icono;
 
             return (
-              <div
-                key={servicio.titulo}
-                className="
-                  relative
-                  overflow-hidden
-                  rounded-2xl
-                  bg-white
-                  p-6
-                  shadow-md
-                  border
-                  border-slate-200
-                  transition-all
-                  duration-500
-                  hover:-translate-y-2
-                  hover:shadow-2xl
-                  hover:border-blue-500
-                  group
-                "
-              >
+              <a
+  key={servicio.titulo}
+  href={
+    servicio.titulo === "ARQUITECTURA"
+      ? "#architecture"
+      : servicio.titulo === "INGENIERÍA"
+      ? "#engineering"
+      : undefined
+  }
+  className="
+    relative
+    overflow-hidden
+    rounded-2xl
+    bg-white
+    p-6
+    shadow-md
+    border
+    border-slate-200
+    transition-all
+    duration-500
+    hover:-translate-y-2
+    hover:shadow-2xl
+    hover:border-blue-500
+    group
+    block
+    cursor-pointer
+  "
+>
+
                 {/* Luz superior */}
                 <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-cyan-400 via-blue-600 to-cyan-400"></div>
 
@@ -150,30 +167,35 @@ export default function Services() {
                 " />
 
                 {/* Texto */}
-                <p className="
-                  text-center
-                  text-gray-600
-                  text-[15px]
-                  leading-7
-                ">
-                  {servicio.descripcion}
-                </p>
+                <p
+  className="
+    text-gray-600
+    text-[15px]
+    leading-6
+    text-justify
+    hyphens-auto
+  "
+>
+  {servicio.descripcion}
+</p>
 
-                {/* Glow */}
-                <div className="
-                  absolute
-                  -bottom-16
-                  left-1/2
-                  -translate-x-1/2
-                  w-44
-                  h-44
-                  bg-blue-400/10
-                  blur-3xl
-                  group-hover:bg-cyan-400/20
-                  transition-all
-                  duration-700
-                " />
-              </div>
+                                      {/* Glow */}
+      <div
+        className="
+          absolute
+          -bottom-16
+          left-1/2
+          -translate-x-1/2
+          w-44
+          h-44
+          bg-blue-400/10
+          blur-3xl
+          group-hover:bg-cyan-400/20
+          transition-all
+          duration-700
+        "
+      />
+    </a>
             );
           })}
         </div>

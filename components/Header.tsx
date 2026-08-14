@@ -28,14 +28,35 @@ export default function Header() {
   );
 
   const menu = [
-    { nombre: "Inicio", link: "#inicio" },
-    { nombre: "Servicios", link: "#servicios" },
-    { nombre: "Nosotros", link: "#nosotros" },
-    { nombre: "Domótica", link: "#domotica" },
-    { nombre: "Tienda Tech", link: "#tienda" },
-    { nombre: "Propiedades", link: "#propiedadessmart" },
-    { nombre: "Contacto", link: "#contacto" },
-  ];
+  {
+    nombre: "Inicio",
+    link: "#inicio",
+  },
+  {
+    nombre: "Servicios",
+    link: "#servicios",
+  },
+  {
+    nombre: "Nosotros",
+    link: "#nosotros",
+  },
+  {
+    nombre: "Domótica",
+    link: "#domotica",
+  },
+  {
+    nombre: "Tienda Tech",
+    link: "#tienda",
+  },
+  {
+    nombre: "Propiedades Smart",
+    link: "#propiedadessmart",
+  },
+  {
+    nombre: "Contacto",
+    link: "#contacto",
+  },
+];
 
   return (
   <header
@@ -168,8 +189,9 @@ export default function Header() {
 
           <a
   href="#contacto"
+  onClick={() => setMenuOpen(false)}
   className="
-    hidden xl:flex
+    flex
     items-center
     justify-center
     h-10
